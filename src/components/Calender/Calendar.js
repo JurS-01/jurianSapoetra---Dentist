@@ -2,6 +2,14 @@ import React from "react";
 import "./Calendar.css";
 import DayInMonth from "./DayInMonth";
 
+
+const sortByDayTime = list => list.sort((a, b) => {
+  if (a.day < b.day) return -1
+  if (a.day > b.day) return 1
+  if (a.time < b.time) return -1
+  if (a.time > b.time) return 1
+})
+
 const divideByDay = appointments => {
   const appointmentsByDay = {};
   appointments.forEach(appointment => {
@@ -15,7 +23,8 @@ const divideByDay = appointments => {
 };
 
 export default ({ appointments }) => {
-  const appointmentsByDay = divideByDay(appointments);
+  const sortedAppointments = sortByDayTime(appointments)
+  const appointmentsByDay = divideByDay(sortedAppointments);
 
   const daysInMonthJSX = Object.values(
     appointmentsByDay

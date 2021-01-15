@@ -8,6 +8,11 @@ body {
   background-color: lightslategray;
 }
 
+.main-header {
+  color: lightgreen;
+  text-shadow: 1px 1px 1px black;
+}
+
 nav li {
   display: inline-block;
   list-style: none;
@@ -32,4 +37,75 @@ a:focus,
 a:visited {
   color: darksalmon;
   outline: none;
+}
+
+.sick {
+  background: red;
+  color: white;
+  border: 1px solid black;
+  padding: 2px;
+}
+
+.user-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgb(77, 76, 76);
+  border-radius: 5px;
+}
+
+.user {
+  margin: 10px;
+  padding: 4px 8px;
+  background: white;
+}
+
+.user-name {
+  font-weight: 700;
+}
+
+.page-header {
+  color: lightgreen;
+  text-shadow: 1px 1px 1px black;
+}
+
+.list-header {
+  color: lightgreen;
+  text-shadow: 1px 1px 1px black;
+  margin: 20px 0px;
+}
+
+.form {
+  margin-bottom: 10px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.Home-img {
+  margin-left: 50px;
+}
+
+.dentist-img {
+  width: 600px;
+  border-radius: 20px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+button {
+  width: 70px;
+  height: 30px;
+  background: wheat;
+  cursor: pointer;
+}
+
+input, select {
+  height: 25px;
 }
