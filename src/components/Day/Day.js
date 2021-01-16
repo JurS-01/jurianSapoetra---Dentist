@@ -82,8 +82,9 @@ class Day extends React.Component {
     const sortedAppointments = sortByDayTime(this.props.data.appointments)
     const dayAppointments = sortedAppointments.filter(app => app.day == this.state.chosenDay)
     const appointmentsJSX = dayAppointments.map(
-      ({ time, patient, dentist, assistant, type, appId }, index) => (
+      ({ day, time, patient, dentist, assistant, type, appId }, index) => (
         <AppointmentInDay
+          day={day}
           time={time}
           patient={patient}
           dentist={dentist}

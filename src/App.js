@@ -49,7 +49,7 @@ class App extends React.Component {
               <li><Link to="/day">Day view</Link></li>
               <li><Link to="/appointment">Appointment</Link></li>
               <li><Link to="/cnc">Users</Link></li>
-              <li><Link to="/sick">Sick leave</Link></li>
+              <li><Link to="/sick">Sick</Link></li>
             </ul>
           </nav>
           <main>
