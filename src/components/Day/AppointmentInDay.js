@@ -17,10 +17,10 @@ const AppointmentInDay = (props) => {
   return (
     <li className={appBackground}>
       <div className="time">{format_time(props.time)}</div>
-      <div className="patient">Patiënt: {props.patient}</div>
-      <div className="day">day {props.day}</div>
-      <div className="dentist">Tandarts: {props.dentist}</div>
-      <div className="assistant">Assistent: {props.assistant}</div>
+      <div className="patient">Patient: {props.patient}</div>
+      <div className="day">Day {props.day}</div>
+      <div className="dentist">Dentist: {props.dentist}</div>
+      <div className="assistant">Assistant: {props.assistant}</div>
       <div className="assistant">Type: {props.type}</div>
       <div id="edit-bar">
         <button className="delete" id={props.appid} onClick={props.handleDelete}>delete</button>
