@@ -72,9 +72,9 @@ class Sick extends React.Component {
                     <input type="text" name="name" placeholder="name" onChange={this.handleChange} ></input>
                     <input type="text" name="surname" placeholder="surname" onChange={this.handleChange} ></input><br></br>
                     <input type="text" name="id" placeholder="id" onChange={this.handleChange} ></input><br></br>
-                    <p>Sick</p>
+                    <label>Sick</label>
                     <input value="sick" type="radio" name="healthStatus" onChange={this.handleChange} />
-                    <p>Recovered</p>
+                    <label>Recovered</label>
                     <input value="recovered" type="radio" name="healthStatus" onChange={this.handleChange} /><br></br>
                     <button type="submit">Submit</button>
                 </form>

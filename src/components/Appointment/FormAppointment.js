@@ -7,25 +7,19 @@ const FormAppointment = (props) => {
         <div>
             <h3 className="page-header">Add new appointment</h3>
             <form onSubmit={props.handleSubmitAppointment}>
-                <label>Patient</label>
-                <input type="text" name="patientName" placeholder="name" onChange={props.handleChange} required ></input>
-                <input type="text" name="patientSurname" placeholder="surname" onChange={props.handleChange} required ></input><br></br>
-                <label>Patient id</label>
-                <input type="text" name="patientId" onChange={props.handleChange} required ></input><br></br>
-                <label>Day</label>
-                <input type="number" name="newDay" min="1" max="28" onChange={props.handleChange} required ></input><br></br>
-                <label>Time</label>
-                <input type="number" name="newTime" min="7" max="16" onChange={props.handleChange} required ></input><br></br>
-                <label>Type</label>
-                <select id="type" name="type" onChange={props.handleChange} defaultValue={'DEFAULT'}>
-                    <option value="DEFAULT" disabled></option>
+                <input type="text" name="patientName" placeholder="name patient" onChange={props.handleChange} required ></input>
+                <input type="text" name="patientSurname" placeholder="surname patient" onChange={props.handleChange} required ></input><br></br>
+                <input type="text" name="patientId" placeholder="patient id" onChange={props.handleChange} required ></input><br></br>
+                <input type="number" name="newDay" min="1" max="28" placeholder="day" onChange={props.handleChange} required ></input>
+                <input type="number" name="newTime" min="7" max="16" placeholder="time" onChange={props.handleChange} required ></input><br></br>
+                <select id="type" name="type" onChange={props.handleChange} required >
+                    <option value="">type:</option>
                     <option value="check up">check up</option>
                     <option value="wisdom tooth removal">wisdom tooth removal</option>
                     <option value="teeth whitening">teeth whitening</option>
                     <option value="root canal treatment">root canal treatment</option>
                     <option value="fillings">fillings</option>
                 </select><br></br>
-                <label>Crew</label>
                 <select id="dentist" name="dentist" onChange={props.handleChange} required >
                     <option value="">dentist:</option>
                     <option value="Dr.Banner">Dr.Banner</option>
