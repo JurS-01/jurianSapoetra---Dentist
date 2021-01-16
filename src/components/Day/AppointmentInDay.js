@@ -18,6 +18,7 @@ const AppointmentInDay = (props) => {
     <li className={appBackground}>
       <div className="time">{format_time(props.time)}</div>
       <div className="patient">Patiënt: {props.patient}</div>
+      <div className="day">day {props.day}</div>
       <div className="dentist">Tandarts: {props.dentist}</div>
       <div className="assistant">Assistent: {props.assistant}</div>
       <div className="assistant">Type: {props.type}</div>
@@ -33,4 +34,11 @@ const AppointmentInDay = (props) => {
   )
 }
 export default AppointmentInDay
+
+// <div className="time"><span className="day-span">day {props.day} </span> {format_time(props.time)}</div>
+// <div className="time"><div className="day-span">day {props.day} </div> {format_time(props.time)}</div>
+
+      // <div className="day">day {props.day}</div>
+      // <div className="time">{format_time(props.time)}</div>
+
 
