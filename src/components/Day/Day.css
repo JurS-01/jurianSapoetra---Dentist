@@ -25,7 +25,9 @@
 
 .dayview .day{
   float: right;
-  padding: 6px 10px 0px 0px;
+  padding: 6px 15px 0px 0px;
+  color: lightskyblue;
+  font-weight: 700;
 }
 
 .dayview .time {
